@@ -8,5 +8,5 @@ visits = {
 }
 
 visits["Общее количество"] = len(users)
-visits["Уникальные посещения"] = len((set(users)))
+visits["Уникальные посещения"] = len(set(users))
 print(visits)
