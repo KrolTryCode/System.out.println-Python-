@@ -7,4 +7,4 @@ char_in_line = 25
 weight_char_in_B = 4
 weight_book_in_B = weight_char_in_B * char_in_line * str_in_page * pages
 
-print("Количество книг, помещающихся на дискету:", "{:.0f}".format(capacity_in_B / weight_book_in_B))
+print(f"Количество книг, помещающихся на дискету: {capacity_in_B / weight_book_in_B:.0f}")
