@@ -6,9 +6,7 @@ def multiply() -> float:
     with open('input.json') as f:
         json_data = json.load(f)
 
-    summ = 0
-    for item in json_data:
-        summ += item["score"] * item["weight"]
+    summ = sum(item["score"] * item["weight"] for item in json_data)
 
     return round(summ, 3)
 
